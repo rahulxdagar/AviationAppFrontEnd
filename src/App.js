@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import About2 from "./pages/About2";
+import Contact2 from "./pages/Contact2";
 import Login from "./pages/Login";
 import SignUp from "./pages/Signup";
 import AdminLogin from "./pages/AdminLogin";
@@ -25,7 +27,9 @@ function App() {
           <Route path="/home" exact component={Home} />
           <Route path="/menu" exact component={Menu} />
           <Route path="/about" exact component={About} />
+          <Route path="/about2" exact component={About2} />
           <Route path="/contact" exact component={Contact} />
+          <Route path="/contact2" exact component={Contact2} />
           <Route path="/login" exact component={Login}/>
           <Route path="/adminlogin" exact component={AdminLogin}/>
           <Route path="/Signup" exact component={SignUp}/>

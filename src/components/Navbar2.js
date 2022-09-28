@@ -8,7 +8,7 @@ import { Route } from "react-router-dom";
 function Navbar2() {
   const [openLinks, setOpenLinks] = useState(false);
 
-    const toggleNavbar = () => {
+  const toggleNavbar = () => {
     setOpenLinks(!openLinks);
   };
   return (
@@ -23,8 +23,8 @@ function Navbar2() {
         </div>
       </div>
       <div className="rightSide">
-        <a> About Us</a>
-        <a> Contact Us </a>
+        <Link to="/about2"> About Us</Link>
+        <Link to="/contact2"> Contact Us </Link>
         <Link to="/login">Login</Link>
         <button onClick={toggleNavbar}>
           <ReorderIcon />

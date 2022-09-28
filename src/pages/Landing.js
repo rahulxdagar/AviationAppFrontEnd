@@ -29,10 +29,6 @@ function Landing() {
         </Link>
       </div>
     </div>
-    <h4>About Us:</h4>
-    <p>
-      We are the aviation fuel distribution company , our main motive is to supply ample amount of fuel to all our customers. We have major airline companies as our customers , and we supply fuel to them which is our major job.
-    </p>
     </div>
   );
 }
