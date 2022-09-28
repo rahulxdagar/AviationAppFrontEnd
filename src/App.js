@@ -10,6 +10,10 @@ import SignUp from "./pages/Signup";
 import AdminLogin from "./pages/AdminLogin";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from "./pages/Landing";
+import Addnewflights from "./pages/Addnewflights";
+import Orderfuel from "./pages/Orderfuel";
+import Vieworders from "./pages/Vieworders";
+
 
 function App() {
   return (
@@ -25,6 +29,9 @@ function App() {
           <Route path="/login" exact component={Login}/>
           <Route path="/adminlogin" exact component={AdminLogin}/>
           <Route path="/Signup" exact component={SignUp}/>
+          <Route path="/Addnewflights" exact component={Addnewflights}/>
+          <Route path="/Orderfuel" exact component={Orderfuel}/>
+          <Route path="/Vieworders" exact component={Vieworders}/>
         </Switch>
         <Footer />
       </Router>
