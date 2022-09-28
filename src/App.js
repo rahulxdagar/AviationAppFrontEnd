@@ -1,32 +1,33 @@
-import { useState, useEffect } from "react";
 import "./App.css";
-import SignUp from "./Components/Signup";
-import { Route, Redirect, Routes, BrowserRouter as  Router, Link } from "react-router-dom";
-import Login from './Components/Login';
-import { Component } from "react/cjs/react.production.min";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import SignUp from "./pages/Signup"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Landing from "./pages/Landing";
 
-
-class App extends Component{
-  render(){
-    return(
-        <div>
-          <Router>
-          <nav className="">
-            <ul>
-              <li><Link to={'/Login'}>Login</Link></li>
-              <li><Link to={'/SignUp'}>Signup</Link></li>
-            </ul>
-          </nav>
-          <hr/>
-          <Routes>
-            <Route exact path='/SignUp' element={<SignUp/>}/>
-            <Route path='/Login' element={<Login />}/>          
-          </Routes>
-          </Router>
-        </div>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Landing} />
+          <Route path="/home" exact component={Home} />
+          <Route path="/menu" exact component={Menu} />
+          <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/login" exact component={Login}/>
+          <Route path="/Signup" exact component={SignUp}/>
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
+  );
 }
-
 
 export default App;
