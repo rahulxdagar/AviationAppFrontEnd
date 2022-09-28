@@ -19,7 +19,7 @@ import Adminhome from "./pages/Adminhome";
 import Addnewfuel from "./pages/Addnewfuel";
 import Updatefuel from "./pages/Updatefuel";
 import Updateorder from "./pages/Updateorder";
-
+import Viewfuelorders from "./pages/Viewfuelorders";
 
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
           <Route path="/Addnewfuel" exact component={Addnewfuel}/>
           <Route path="/Updatefuel" exact component={Updatefuel}/>
           <Route path="/Updateorder" exact component={Updateorder}/>
+          <Route path="/Viewfuelorders" exact component={Viewfuelorders}/>
         </Switch>
         <Footer />
       </Router>
