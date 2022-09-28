@@ -23,6 +23,10 @@ function Adminhome() {
       <Link to="/Vieworders">         
         <button> View Fuel Orders </button>
       </Link>
+      <br/><br/><br/><br/><br/>      
+      <Link to="/Updateorder">         
+        <button> Update Order Status</button>
+      </Link>
       </div>
     </div>
     </div>

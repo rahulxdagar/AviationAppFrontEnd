@@ -3,47 +3,41 @@ import { useState, useEffect } from "react";
 import "../styles/login.css"
 import Navbar from "../components/Navbar";
 
-const Addnewfuel=()=>{
+const Updateorder=()=>{
     return (
       <div>
         <Navbar/>
     <div className="container">
         <form>
-          <h1>Add New Fuel</h1>
+          <h1>Update Fuel Details</h1>
           <div className="ui divider"></div>
           <div className="ui form">
           <div className="field">
-            <label>Fuel Name</label>
+            <label>Order ID</label>
             <br></br>
             <input
               type="text"
-              name="fuelname"
+              name="orderid"
             />
           </div>
           <div className="field">
-            <label>Cost</label>
+          <br/><br/>
+            <label>Current Status: </label>
+            <label name="currstatus">{}Pending</label>
+            
+            <br></br>    
+          </div>
+          <div className="field">
+          <br/><br/> 
+            <label>Enter New Status</label>
             <br></br>
             <input
               type="text"
-              name="cost"
+              name="newstatus"
             />
           </div>
-          <div className="field">
-            <label>Last Updated</label>
-            <input
-              type="text"
-              name="lastupdated"
-            />
-          </div>
-          <div className="field">
-            <label>Place</label>
-            <br></br>
-            <input
-              type="text"
-              name="place"
-            />
-          </div>
-            <button className="fluid ui button blue">Submit</button>
+          
+            <button className="fluid ui button blue">Update Order</button>
           </div>
         </form>
       </div>
@@ -51,4 +45,4 @@ const Addnewfuel=()=>{
     )
 }
 
-export default Addnewfuel;
+export default Updateorder;

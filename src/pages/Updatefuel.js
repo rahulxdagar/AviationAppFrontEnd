@@ -3,15 +3,23 @@ import { useState, useEffect } from "react";
 import "../styles/login.css"
 import Navbar from "../components/Navbar";
 
-const Addnewfuel=()=>{
+const Updatefuel=()=>{
     return (
       <div>
         <Navbar/>
     <div className="container">
         <form>
-          <h1>Add New Fuel</h1>
+          <h1>Update Fuel Details</h1>
           <div className="ui divider"></div>
           <div className="ui form">
+          <div className="field">
+            <label>Fuel ID</label>
+            <br></br>
+            <input
+              type="text"
+              name="fuelid"
+            />
+          </div>
           <div className="field">
             <label>Fuel Name</label>
             <br></br>
@@ -43,7 +51,7 @@ const Addnewfuel=()=>{
               name="place"
             />
           </div>
-            <button className="fluid ui button blue">Submit</button>
+            <button className="fluid ui button blue">Update</button>
           </div>
         </form>
       </div>
@@ -51,4 +59,4 @@ const Addnewfuel=()=>{
     )
 }
 
-export default Addnewfuel;
+export default Updatefuel;
