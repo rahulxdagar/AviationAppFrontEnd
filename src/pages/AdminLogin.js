@@ -46,7 +46,9 @@ const AdminLogin=()=>{
           <div className="ui divider"></div>
           <div className="ui form">
           <div className="field">
+
             <label>Email</label>
+            <br></br>
             <input
               type="text"
               name="email"
@@ -54,7 +56,9 @@ const AdminLogin=()=>{
               onChange={handleChange}
             />
           </div>
+          
           <p>{formErrors.email}</p>
+         
             <div className="field">
               <label>Password</label>
               <input

@@ -1,8 +1,13 @@
 import React from "react";
 import MultiplePizzas from "../assets/Aboutus.png";
 import "../styles/About.css";
+import Navbar from "../components/Navbar";
+
+
 function About() {
   return (
+    <div>
+      <Navbar/>
     <div className="about">
       <div
         className="aboutTop"
@@ -18,6 +23,7 @@ We make sure that we show the fluctuating prices of every type of fuel in order 
 We aim at making flying easier and higher for our consumers!
         </p>
       </div>
+    </div>
     </div>
   );
 }

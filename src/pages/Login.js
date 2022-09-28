@@ -1,6 +1,7 @@
 import {react,Component} from "react";
 import { useState, useEffect } from "react";
-import "../styles/login.css"
+import "../styles/login.css";
+import Navbar2 from "../components/Navbar2";
 
 
 const Login=()=>{
@@ -41,7 +42,8 @@ const Login=()=>{
     };
   
     return (
-      
+      <div>
+        <Navbar2/>
       <div className="container">
         <form onSubmit={handleSubmit}>
           <h1>Login</h1>
@@ -49,6 +51,7 @@ const Login=()=>{
           <div className="ui form">
           <div className="field">
             <label>Email</label>
+            <br/>
             <input
               type="text"
               name="email"
@@ -70,6 +73,7 @@ const Login=()=>{
             <button className="fluid ui button blue">Submit</button>
           </div>
         </form>
+      </div>
       </div>
     );
     

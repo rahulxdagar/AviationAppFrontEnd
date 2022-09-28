@@ -67,6 +67,7 @@ export default function SignUp() {
           <div className="ui form">
           <div className="field">
             <label>Email</label>
+            <br/>
             <input
               type="text"
               name="email"
@@ -78,6 +79,7 @@ export default function SignUp() {
           <p>{formErrors.email}</p>
           <div className="field">
             <label>GSTIN</label>
+            <br/>
             <input
               type="text"
               name="gstin"

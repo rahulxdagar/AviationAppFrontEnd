@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BannerImage from "../assets/plane.jpg";
 import "../styles/Home.css";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
+    <div>
+      <Navbar/>
     <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
       <div className="headerContainer">
         <h1> Aviation Fuel System </h1>
@@ -13,6 +16,7 @@ function Home() {
           <button> ORDER NOW </button>
         </Link>
       </div>
+    </div>
     </div>
   );
 }

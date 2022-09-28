@@ -11,6 +11,7 @@ function Footer() {
       <div className="socialMedia">
         <InstagramIcon /> <TwitterIcon /> <FacebookIcon /> <LinkedInIcon />
       </div>
+      <p id="contact">Contact us on: AvaiationFuelSystem@shell.com</p>
       <p> &copy; Aviation Fuel System</p>
     </div>
   );

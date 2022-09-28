@@ -1,9 +1,13 @@
 import React from "react";
 import PizzaLeft from "../assets/Contact.png";
 import "../styles/Contact.css";
+import Navbar from "../components/Navbar";
 
 function Contact() {
   return (
+    <div>
+      
+      <Navbar/>
     <div className="contact">
       <div
         className="leftSide"
@@ -27,6 +31,7 @@ function Contact() {
           <button type="submit"> Send Message</button>
         </form>
       </div>
+    </div>
     </div>
   );
 }
