@@ -12,11 +12,14 @@ function Landing() {
         <Link to="/login">
           <button> LOGIN </button>
         </Link>
+        <br/><br/><br/><br/><br/>      
+        <Link to="/AdminLogin">         
+          <button> ADMIN LOGIN</button>
+        </Link>
         <br/>
           <br/>
           <br/> <br/>
-          <br/>
-        
+          <br/>      
         <Link to="/Signup">         
           <button> SIGN UP </button>
         </Link>

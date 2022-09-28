@@ -1,9 +1,8 @@
 import {react,Component} from "react";
 import { useState, useEffect } from "react";
-import "../styles/login.css"
 
 
-const Login=()=>{
+const AdminLogin=()=>{
     const initialValues = { email: "", password: "" };
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
@@ -40,11 +39,10 @@ const Login=()=>{
       return errors;
     };
   
-    return (
-      
+    return (      
       <div className="container">
         <form onSubmit={handleSubmit}>
-          <h1>Login</h1>
+          <h1>Admin Login</h1>
           <div className="ui divider"></div>
           <div className="ui form">
           <div className="field">
@@ -75,4 +73,4 @@ const Login=()=>{
     
     }
 
-export default Login;
+export default AdminLogin;

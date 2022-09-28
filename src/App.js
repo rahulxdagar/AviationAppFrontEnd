@@ -6,7 +6,8 @@ import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-import SignUp from "./pages/Signup"
+import SignUp from "./pages/Signup";
+import AdminLogin from "./pages/AdminLogin";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from "./pages/Landing";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/login" exact component={Login}/>
+          <Route path="/adminlogin" exact component={AdminLogin}/>
           <Route path="/Signup" exact component={SignUp}/>
         </Switch>
         <Footer />

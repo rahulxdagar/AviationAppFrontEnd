@@ -81,7 +81,6 @@ export default function SignUp() {
             <input
               type="text"
               name="gstin"
-              placeholder="gstin"
               value={formValues.gstin}
               onChange={handleChange}
             />
@@ -103,7 +102,6 @@ export default function SignUp() {
             <input
               type="password"
               name="password1"
-              placeholder="Confirm Password"
               value={formValues.password1}
               onChange={handleChange}
             />
