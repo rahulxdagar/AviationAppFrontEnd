@@ -3,12 +3,12 @@ import { MenuList } from "../helpers/MenuList";
 import MenuItem from "../components/MenuItem";
 import "../styles/Menu.css";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar3 from "../components/Navbar3";
 
 function Adminhome() {
   return (
     <div>
-      <Navbar/>
+      <Navbar3/>
     <div className="menu">
       <h1 className="menuTitle">Admin Menu</h1>
       <div className="headerContainer">

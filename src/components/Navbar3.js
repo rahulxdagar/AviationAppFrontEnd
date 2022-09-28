@@ -5,7 +5,7 @@ import ReorderIcon from "@material-ui/icons/Reorder";
 import "../styles/Navbar.css";
 import { Route } from "react-router-dom";
 
-function Navbar2() {
+function Navbar3() {
   const [openLinks, setOpenLinks] = useState(false);
 
   const toggleNavbar = () => {
@@ -14,19 +14,18 @@ function Navbar2() {
   return (
     <div className="navbar">
       <div className="leftSide" id={openLinks ? "open" : "close"}>
-        <img src={Logo} />
+      <Link to="/adminhome"><img src={Logo} /></Link>
         <div className="hiddenLinks">
-          <Link to="/home"> Home </Link>
-          <Link to="/menu"> Menu </Link>
-          <Link to="/about"> About </Link>
-          <Link to="/contact"> Contact </Link>
+          <Link to="/Adminhome">Admin Home </Link>
+          <Link to="/about2"> About </Link>
+          <Link to="/contact2"> Contact </Link>
         </div>
       </div>
       <div className="rightSide">
-        <Link to="/about2"> About Us</Link>
-        <Link to="/contact2"> Contact Us </Link>
-        <Link to="/login">Login</Link>
-        <Link to="/adminlogin">Admin Login</Link>
+        <Link to="/Adminhome">Admin Home </Link>
+        <Link to="/about2"> About Us </Link>
+        <Link to="/contact2"> Contact Us</Link>
+        <Link to="/">Log Out</Link>
         <button onClick={toggleNavbar}>
           <ReorderIcon />
         </button>
@@ -35,4 +34,4 @@ function Navbar2() {
   );
 }
 
-export default Navbar2;
+export default Navbar3;

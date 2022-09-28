@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Component } from "react/cjs/react.development";
 import {react} from "react";
 //import "../styles/login.css"
+import Navbar2 from "../components/Navbar2";
 
 
 export default function SignUp() {
@@ -58,7 +59,8 @@ export default function SignUp() {
   };
   
   return (
-    <>
+    <div>
+      <Navbar2/>
     <div className="container">
       <form onSubmit={handleSubmit}>
         <h1>Sign Up </h1>
@@ -113,7 +115,7 @@ export default function SignUp() {
         </div>
       </form>
     </div>
-    </>
+    </div>
   );
 }
   

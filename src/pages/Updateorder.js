@@ -1,12 +1,12 @@
 import {react,Component} from "react";
 import { useState, useEffect } from "react";
 import "../styles/login.css"
-import Navbar from "../components/Navbar";
+import Navbar3 from "../components/Navbar3";
 
 const Updateorder=()=>{
     return (
       <div>
-        <Navbar/>
+        <Navbar3/>
     <div className="container">
         <form>
           <h1>Update Fuel Details</h1>
