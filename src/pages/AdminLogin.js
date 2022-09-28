@@ -1,5 +1,7 @@
 import {react,Component} from "react";
 import { useState, useEffect } from "react";
+import Navbar2 from "../components/Navbar2";
+
 
 
 const AdminLogin=()=>{
@@ -39,7 +41,9 @@ const AdminLogin=()=>{
       return errors;
     };
   
-    return (      
+    return (   
+      <div>
+        <Navbar2/>
       <div className="container">
         <form onSubmit={handleSubmit}>
           <h1>Admin Login</h1>
@@ -73,6 +77,7 @@ const AdminLogin=()=>{
           </div>
         </form>
       </div>
+      </div>  
     );
     
     }
