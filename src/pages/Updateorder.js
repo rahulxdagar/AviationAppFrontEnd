@@ -9,7 +9,7 @@ const Updateorder=()=>{
         <Navbar3/>
     <div className="container">
         <form>
-          <h1>Update Fuel Details</h1>
+          <h1>Update Order Status</h1>
           <div className="ui divider"></div>
           <div className="ui form">
           <div className="field">
@@ -31,10 +31,13 @@ const Updateorder=()=>{
           <br/><br/> 
             <label>Enter New Status</label>
             <br></br>
-            <input
-              type="text"
-              name="newstatus"
-            />
+            <select name="newstatus" id="newstatus">
+                  <option value="pending">Preparing</option>
+                  <option value="fulfilled">Dispatch</option>
+                  <option value="pending">Pending</option>
+                  <option value="fulfilled">Fullfilled</option>
+                
+                </select>
           </div>
           
             <button className="fluid ui button blue">Update Order</button>

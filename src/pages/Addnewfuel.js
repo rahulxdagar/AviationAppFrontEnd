@@ -21,6 +21,7 @@ const Addnewfuel=()=>{
             />
           </div>
           <div className="field">
+            <br></br>
             <label>Cost</label>
             <br></br>
             <input
@@ -29,13 +30,7 @@ const Addnewfuel=()=>{
             />
           </div>
           <div className="field">
-            <label>Last Updated</label>
-            <input
-              type="text"
-              name="lastupdated"
-            />
-          </div>
-          <div className="field">
+            <br/><br/>
             <label>Place</label>
             <br></br>
             <input

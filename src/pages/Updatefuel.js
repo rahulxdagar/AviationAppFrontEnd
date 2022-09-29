@@ -21,6 +21,7 @@ const Updatefuel=()=>{
             />
           </div>
           <div className="field">
+            <br/>
             <label>Fuel Name</label>
             <br></br>
             <input
@@ -29,6 +30,7 @@ const Updatefuel=()=>{
             />
           </div>
           <div className="field">
+            <br/>
             <label>Cost</label>
             <br></br>
             <input
@@ -37,13 +39,16 @@ const Updatefuel=()=>{
             />
           </div>
           <div className="field">
+            <br/>
             <label>Last Updated</label>
+            <br/>
             <input
-              type="text"
+              type="date"
               name="lastupdated"
             />
           </div>
           <div className="field">
+            <br/>
             <label>Place</label>
             <br></br>
             <input
